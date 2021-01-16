@@ -414,7 +414,13 @@ function gotMessage(msg){
     }
     if (command ==='bonk'){
         const taggedUser = msg.mentions.users.first();
-        msg.channel.send(`BONK GO TO HORNY JAIL YOU FILTHY ANIMAL ${taggedUser.username}`)
+        msg.channel.send(`BONK GO TO HORNY JAIL YOU FILTHY ANIMAL ${taggedUser.username}`);
+    }
+    if (command ==='spam'){
+        var i;
+        for( i=0; i< 10;i++){
+            msg.channel.send(`spam spam spam spam spam`);
+        }
     }
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
