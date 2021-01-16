@@ -1,9 +1,9 @@
-const replyHelp = require("../arrayreplies")
+const replyHelp = require("../arrayreplies");
 
 module.exports = {
     name: 'help',
     description: 'help',
-    execute(msg, args){
+    execute(message, args){
         msg.channel.send(replyHelp[0]);
-    }
-}
+    },
+};

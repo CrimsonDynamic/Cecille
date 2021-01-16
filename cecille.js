@@ -1,6 +1,7 @@
 console.log('Beep Beep!');
 const Discord = require('discord.js');
 const { prefix } = require('./config.json');
+//const { repliesTruth } = require("./commands/repliesTruth");
 
 const client = new Discord.Client();
 
@@ -13,8 +14,7 @@ client.on('ready', readyDiscord);
 function readyDiscord() {
     console.log('ready!')
 }
-//const replyarrays = require("./arrayreplies");
-const repliesTruth =[
+const repliesTruth = [
     'Do you hate u/That-Scifi-Nerd with a burning passion?',
     'When was the last time you lied?',
     'When was the last time you cried?',
@@ -166,8 +166,7 @@ const repliesTruth =[
     "Have you ever lied about your age?",
     "Have you ever fallen in love at first sight?",
     "If a girl/boy you didn't like had a crush on you, how would you act around her/him?",
-
-]
+];
 const repliesNSFW =[
     "Do you have any fetishes?",
     "Have you ever sent out a nude Snapchat?",
@@ -398,8 +397,11 @@ function gotMessage(msg){
         msg.channel.send(`You wanted to kick: ${taggedUser.username}`);
     }
     if (command ==='kiss'){
+        if(!msg.mentions.users.size){
+            return msg.reply(`You need to tag a user to kiss him/her`);
+        }
         const taggedUser = msg.mentions.users.first();
-        msg.reply(`Now kiss ${taggedUser.username}`);
+        msg.reply(`kissed ${taggedUser.username}`);
     }
     if (command ==='oi'){
         msg.reply(`u are 1 fucking cheeky kunt mate i swear i am goin 2 wreck u i swear on my mums life and i no u are scared lil bitch gettin your mates to send me messages saying dont meet up coz u r sum big bastard with muscles lol fuckin sad mate really sad jus shows what a scared lil gay boy u are and whats all this crap ur mates sendin me about sum bodybuildin website that 1 of your faverite places to look at men u lil fuckin gay boy fone me if u got da balls cheeky prick see if u can step up lil queer`);

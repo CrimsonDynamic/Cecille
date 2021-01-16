@@ -1,4 +1,5 @@
-const repliesTruth =[
+//const replyarrays = require("./arrayreplies");
+const repliesTruth = [
     'Do you hate u/That-Scifi-Nerd with a burning passion?',
     'When was the last time you lied?',
     'When was the last time you cried?',
@@ -136,7 +137,7 @@ const repliesTruth =[
     "What is your worst habit?",
     "What's one thing you do that you don't want anyone to know about?",
     "Do you frequently stalk anyone on social media? Who?",
-    "f you had to choose between dating someone ugly who was good in bed or dating someone hot who was bad in bed, which would you choose?",
+    "If you had to choose between dating someone ugly who was good in bed or dating someone hot who was bad in bed, which would you choose?",
     "Who in this chat would you make out with?",
     "When was the last time you flexed in the mirror?",
     "Blonde or brunette or ginger?",
@@ -149,14 +150,6 @@ const repliesTruth =[
     "If every time you checked out a girl's/boy's body, you would gain 5 pounds, how often would you do it?",
     "Have you ever lied about your age?",
     "Have you ever fallen in love at first sight?",
-    "If a girl/boy you didn't like had a crush on you, how would you act around her?",
-
+    "If a girl/boy you didn't like had a crush on you, how would you act around her/him?",
 ];
-module.exports = {
-    name: 'truth',
-    description: 'shows truth questions',
-    execute(msg, args){
-        const index = Math.floor(Math.random() * repliesTruth.length);
-        msg.channel.send(repliesTruth[index]);
-    },
-};
+exports.repliesTruth = repliesTruth;
