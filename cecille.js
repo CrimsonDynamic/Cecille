@@ -46,7 +46,6 @@ const repliesTruth = [
     "Who in this chat would be the worst person to date? Why?",
     "If you were reborn, what decade would you want to be born in?",
     "Have you ever been caught checking someone out?",
-    "Did you ever had a sex dream? If yes what was it about ? ",
     "Do you have bad foot odor?",
     "What is something you’ve done to try to be ‘cooler’?",
     "Have you ever got caught doing something you shouldn’t?",
@@ -168,6 +167,7 @@ const repliesTruth = [
     "If a girl/boy you didn't like had a crush on you, how would you act around her/him?",
 ];
 const repliesNSFW =[
+    "Did you ever had a sex dream? If yes what was it about ? ",
     "Do you have any fetishes?",
     "Have you ever sent out a nude Snapchat?",
     "Have you ever received a nude selfie? Who was it from? What was your reaction? Like or dislike?",
@@ -411,6 +411,10 @@ function gotMessage(msg){
     }
     if (command ==='github'){
         msg.channel.send("https://github.com/CrimsonDynamic/Cecille");
+    }
+    if (command ==='bonk'){
+        const taggedUser = msg.mentions.users.first();
+        msg.channel.send(`BONK GO TO HORNY JAIL YOU FILTHY ANIMAL ${taggedUser.username}`)
     }
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
