@@ -440,6 +440,17 @@ async function gotMessage(msg){
         msg.channel.send(json.results[index].url);
         msg.channel.send("Gif from Tenor " + keywords);
     }
+    if (command ==='servers'){
+        client.guilds.cache.forEach(guild => {
+            console.log(`${guild.name} | ${guild.id}`);
+          })
+    }
+    if (command ==='4959'){
+        msg.channel.send("https://discord.gg/9WQMBVtFvR")
+    }
+    if (command ==='leave'){
+        msg.guild.leave(731956610972516413);
+    }
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
             return msg.channel.send(`Your avatar: <${msg.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
