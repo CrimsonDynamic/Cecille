@@ -422,6 +422,11 @@ function gotMessage(msg){
             msg.channel.send(`spam spam spam spam spam`);
         }
     }
+    if (command ==='init'){
+        if(!parseInt(args)){
+            return msg.reply(`You need to use a number`)
+        } msg.channel.send(`Starting a round in ${args} Minutes!\n React to participate!`)
+    }
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
             return msg.channel.send(`Your avatar: <${msg.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
