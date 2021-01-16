@@ -397,6 +397,9 @@ function gotMessage(msg){
         const taggedUser = msg.mentions.users.first();
         msg.channel.send(`You wanted to kick: ${taggedUser.username}`);
     }
+    if (command ==='aww') {
+        msg.channel.send("<:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456>");
+    }
     if (command ==='github'){
         msg.channel.send("https://github.com/CrimsonDynamic/TruthorTruthBot");
     }
