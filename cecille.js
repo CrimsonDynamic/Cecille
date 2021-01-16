@@ -401,7 +401,7 @@ function gotMessage(msg){
         msg.channel.send("<:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456>");
     }
     if (command ==='github'){
-        msg.channel.send("https://github.com/CrimsonDynamic/TruthorTruthBot");
+        msg.channel.send("https://github.com/CrimsonDynamic/Cecille");
     }
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
