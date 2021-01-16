@@ -4,7 +4,7 @@ const { prefix } = require('./config.json');
 //const { repliesTruth } = require("./commands/repliesTruth");
 
 const client = new Discord.Client();
-
+const fetch = require('node-fetch');
 require('dotenv').config();
 
 client.login(process.env.API_KEY);
@@ -338,7 +338,7 @@ const repliesChoose =[
     "Just look into the mirror you will see the same disappointment your parents see in you and the chat because you not choosio"
 ]
 client.on('message', gotMessage);
-function gotMessage(msg){
+async function gotMessage(msg){
     console.log(msg.content);
     if (!msg.content.startsWith(prefix) || msg.author.bot) return;
     const args = msg.content.slice(prefix.length).trim().split(/ +/);
@@ -429,6 +429,16 @@ function gotMessage(msg){
         if(!parseInt(args)){
             return msg.reply(`You need to use a number`)
         } msg.channel.send(`Starting a round in ${args} Minutes!\n React to participate!`)
+    }
+    if (command ==='gif'){
+        keywords = args;
+        let url = `https://api.tenor.com/v1/search?q=${keywords}&key=${process.env.TENOR_KEY}&limit=8`
+        let respone = await fetch(url);
+        let json = await respone.json();
+        console.log(json);
+        let index = Math.floor(Math.random() * json.results.length);
+        msg.channel.send(json.results[index].url);
+        msg.channel.send("Gif from Tenor " + keywords);
     }
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
