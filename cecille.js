@@ -397,6 +397,10 @@ function gotMessage(msg){
         const taggedUser = msg.mentions.users.first();
         msg.channel.send(`You wanted to kick: ${taggedUser.username}`);
     }
+    if (command ==='kiss'){
+        const taggedUser = msg.mentions.users.first();
+        msg.reply(`Now kiss ${taggedUser.username}`);
+    }
     if (command ==='aww') {
         msg.channel.send("<:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456><:awww:764879232941031456>");
     }
