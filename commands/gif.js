@@ -7,5 +7,5 @@ let json = await respone.json();
 console.log(json);
 let index = Math.floor(Math.random() * json.results.length);
 msg.channel.send(json.results[index].url);
-msg.channel.send("Gif from Tenor " + keywords);
+//msg.channel.send("Gif from Tenor " + keywords);
 };
