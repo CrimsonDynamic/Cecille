@@ -1,3 +1,4 @@
 module.exports = function(msg, args){
-msg.reply("Wow the channel is dead you really had to say it out loud do you ?");
+msg.channel.send("Wow the channel is dead gonna have to revive it somehow?");
+msg.channel.send('CPR UNDERWAY PLS STAND BACK');
 };
