@@ -446,11 +446,16 @@ async function gotMessage(msg){
           })
     }
     if (command ==='4959'){
-        msg.channel.send("https://discord.gg/9WQMBVtFvR")
+        msg.channel.send("https://discord.gg/9WQMBVtFvR \n This is an awesome server everyone can join")
     }
-    if (command ==='leave'){
-        msg.guild.leave(731956610972516413);
-    }
+    /* if (command ==='leave'){
+        var guild = client.guilds.cache.get('731956610972516413')
+        guild.leave();
+
+        //client.guild.leave(731956610972516413);
+        // 729340856720425010 crimsons test server
+        // 731956610972516413 Goldfish server
+    }*/
     else if (command === 'avatar') {
         if (!msg.mentions.users.size) {
             return msg.channel.send(`Your avatar: <${msg.author.displayAvatarURL({ format: "png", dynamic: true })}>`);

@@ -1,0 +1,1 @@
+msg.channel.send("https://discord.gg/MtksE4KFHd");
