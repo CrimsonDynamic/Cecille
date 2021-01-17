@@ -5,7 +5,7 @@ const c = require('./commands/c.js');
 const bonk = require('./commands/bonk.js');
 const ched = require('./commands/ched.js');
 const avatar = require('./commands/avatar.js');
-const nsfwtruth = require('./commands/nsfwtruth.js')
+//const nsfwtruth = require('./commands/nsfwtruth.js')
 const truth = require('./commands/truth.js');
 const church = require('./commands/church.js');
 const daddy = require('./commands/daddy.js');
@@ -23,7 +23,7 @@ const support = require('./commands/support.js');
 const version = require('./commands/version.js');
 
 const commands = { 
-    choochoo,gif,bye,c,bonk,ched,avatar,nsfwtruth,truth, church,
+    choochoo,gif,bye,c,bonk,ched,avatar,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, servers, ship,
     spam, support, version,
 };
@@ -32,7 +32,7 @@ module.exports = async function(msg) {
     console.log(msg.content);
     let tokens = msg.content.split(' ');
     let command = tokens.shift();
-    if (command.charAt(0) === '!') {
+    if (command.charAt(0) === '$') {
       command = command.substring(1);
       commands[command](msg, tokens);
     }

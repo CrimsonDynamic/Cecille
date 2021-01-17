@@ -1,3 +1,5 @@
+const { Guild } = require("discord.js");
+
 const repliesNSFW =[
     "Did you ever had a sex dream? If yes what was it about ? ",
     "Do you have any fetishes?",
@@ -155,6 +157,6 @@ const repliesNSFW =[
 
 ];
 module.exports = function(msg, args){
-const index = Math.floor(Math.random() * repliesNSFW.length);
-msg.channel.send(repliesNSFW[index]);
+    const index = Math.floor(Math.random() * repliesNSFW.length);
+    msg.channel.send(repliesNSFW[index]);
 };
