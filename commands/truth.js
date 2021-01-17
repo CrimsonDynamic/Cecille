@@ -78,7 +78,7 @@ const repliesTruth =[
     "What do you do to get yourself 'sexy'?",
     "Who is your current crush?",
     "Who are you jealous of?",
-    "Who are the top five cutest guys in your class or this server you choose? Rank them.",
+    "Who are the top five cutest guys/girls in your class or this server you choose? Rank them.",
     "How many kids do you want to have in the future?",
     "Have you ever flirted with your best friend’s siblings?",
     "Jock, nerd, or bad guy/girl?",
