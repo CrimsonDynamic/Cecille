@@ -154,6 +154,7 @@ const repliesNSFW =[
     "Have you ever done something that you feel guilty about?",
     "If I went through your room, would I find anything hidden or interesting?",
     "Do you have a name for your penis or vagina?",
+    "Ever played seven minutes in heaven ? If yes what happened?",
 
 ];
 module.exports = function(msg, args){
