@@ -1,4 +1,4 @@
-module.exports = function (msg, args){
+module.exports = async function (msg, args){
 keywords = args;
 let url = `https://api.tenor.com/v1/search?q=${keywords}&key=${process.env.TENOR_KEY}&limit=8`
 let respone = await fetch(url);

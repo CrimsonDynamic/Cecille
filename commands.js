@@ -1,28 +1,18 @@
-const fetch = require('node-fetch');
-const Discord = require('discord.js');
-const gif = require('./commmands/gif.js');
+const gif = require('./commands/gif.js');
 const bonk = require('./commands/bonk.js')
 const bye = require('./commands/bye.js');
 const c = require('./commands/c.js')
 const ched = requires('./commands/ched.js')
+const choochoo = requires('./commands/choochoo.js')
 
-const commands = {
-    gif: function(args){
-        console.log('gif');
-    },
-    bonk: function(args){
-        console.log('bonk');
-    },
-}
-module.exports = async function (msg){
-    console.log(msg.content);
-    let tokens = msg.content.split(/ +/);
-    let command = tokens.shift();
-    if (command.charAt(0) ==="$"){
+const commands = { choochoo, gif, bonk, bye, c, ched, };
+module.exports = async function(msg) {
+      let tokens = msg.content.split(' ');
+      let command = tokens.shift();
+      if (command.charAt(0) === '$') {
         command = command.substring(1);
-        //gif or bonk etc
         commands[command](msg, tokens);
-    }
+      }c
     /*if (command === `truth`){
         const index = Math.floor(Math.random() * repliesTruth.length);
         msg.channel.send(repliesTruth[index]);
