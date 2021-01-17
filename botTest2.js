@@ -12,6 +12,6 @@ function readyDiscord() {
   console.log('💖');
 }
 
-const commandHandler = require('./commands2');
+const commandHandler = require('./commands');
 
 client.on('message', commandHandler);

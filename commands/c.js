@@ -5,5 +5,7 @@ const repliesChoose =[
     "wow you really are a badass for not chooosioing /s",
     "Just look into the mirror you will see the same disappointment your parents see in you and the chat because you not choosio"
 ];
+module.exports = function(msg, args){
 const index = Math.floor(Math.random() * repliesChoose.length);
         msg.channel.send(repliesChoose[index]);
+};

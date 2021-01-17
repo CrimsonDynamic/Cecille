@@ -154,5 +154,7 @@ const repliesNSFW =[
     "Do you have a name for your penis or vagina?",
 
 ];
+module.exports = function(msg, args){
 const index = Math.floor(Math.random() * repliesNSFW.length);
 msg.channel.send(repliesNSFW[index]);
+};
