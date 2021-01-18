@@ -4,4 +4,5 @@ const replyHelp =[
 ]
 module.exports = function(msg, args){
 msg.reply(replyHelp[0]);
+msg.channel.send('Use $survey for a quick form you can fill out regarding the bot.\n I would love your participation!')
 }

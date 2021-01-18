@@ -26,6 +26,7 @@ const embedTest = require('./commands/embedTest.js');
 const holymountain = require('./commands/holymountain.js');
 const pasta = require('./commands/pasta.js');
 const survey = require('./commands/survey.js');
+//const image = require('./commands/image.js')
 
 const commands = { 
     choochoo,gif,bye,c,bonk,ched,avatar,nsfwtruth,truth, church,
