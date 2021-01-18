@@ -24,11 +24,12 @@ const version = require('./commands/version.js');
 const kitten = require('./commands/kitten.js');
 const embedTest = require('./commands/embedTest.js');
 const holymountain = require('./commands/holymountain.js')
+const pasta = require('./commands/pasta.js')
 
 const commands = { 
     choochoo,gif,bye,c,bonk,ched,avatar,nsfwtruth,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, servers, ship,
-    spam, support, version,kitten,embedTest,holymountain
+    spam, support, version,kitten,embedTest,holymountain, pasta,
 };
 module.exports = async function(msg) {
     console.log(msg.content);
