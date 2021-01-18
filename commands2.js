@@ -21,12 +21,14 @@ const ship = require('./commands/ship.js');
 const spam = require('./commands/spam.js');
 const support = require('./commands/support.js');
 const version = require('./commands/version.js');
-const holymountain = require('./commands/holymountain.js')
+const holymountain = require('./commands/holymountain.js');
 const pasta = require('./commands/pasta.js');
+const survey = require('./commands/survey.js');
+
 const commands = { 
     choochoo,gif,bye,c,bonk,ched,avatar,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, servers, ship,
-    spam, support, version,holymountain, pasta,
+    spam, support, version,holymountain, pasta, survey,
 };
 
 module.exports = async function(msg) {
