@@ -16,7 +16,7 @@ const init = require('./commands/init.js');
 const kiss = require('./commands/kiss.js');
 const oi = require('./commands/oi.js');
 const server = require('./commands/server.js');
-const servers = require('./commands/servers.js');
+//const servers = require('./commands/servers.js');
 const ship = require('./commands/ship.js');
 const spam = require('./commands/spam.js');
 const support = require('./commands/support.js');
@@ -28,7 +28,7 @@ const pasta = require('./commands/pasta.js')
 
 const commands = { 
     choochoo,gif,bye,c,bonk,ched,avatar,nsfwtruth,truth, church,
-    daddy, fuckme, github, help, init, kiss, oi, server, servers, ship,
+    daddy, fuckme, github, help, init, kiss, oi, server, ship,
     spam, support, version,kitten,embedTest,holymountain, pasta,
 };
 module.exports = async function(msg) {
@@ -38,5 +38,10 @@ module.exports = async function(msg) {
       if (command.charAt(0) === '$') {
         command = command.substring(1);
         commands[command](msg, tokens);
+      }
+      if (msg.content ==='$servers'){
+        client.guilds.cache.forEach(guild => {
+          console.log(`${guild.name} | ${guild.id}`);
+        })
       }
 }

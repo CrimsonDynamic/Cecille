@@ -8,7 +8,19 @@ Also I PM'd you. Take a look and lmk what you think.`,
 "I have an IQ in the high 130s. Tread fucking lightly with that tone. You would be my subordinate in ANY situation. Be thankful you found this girl and don't let her be alone any longer. She shouldn't be alone. None of these women should be alone.",
 "You have made a massive mistake. Doing this for me would have made you a symbol in the world of intellect and literature. It is so typical for someone like you to forget this. It is so typical for someone like you to use abbreviated words. I was prepared to open your world to my knowledge and share my stories and art, with you. You will forever regret the choice you just made, so I will offer to let you do this project again. If you do not, you will have to face the consequences.",
 "Quit gaming 6 months ago. Bought a new car, I have an amazing new girlfriend, I make a shitload of money and I'm buying a house this spring. I party every weekend, I'm never home. I'm enjoying life. Do yourselves a favor. Stop trying to make gaming a career. It's cringe as fuck.",
-`Dicks are so cute omg( •?• ) when you hold one in your hand and it starts twitching its like its nuzzling you(/) or when they perk up and look at you like" owo nya? :3c" hehe ~ penis-kun is happy to see me!!(?) and the most adorable thing ever is when sperm-sama comes out but theyre rlly shy so u have to work hard!!(?••) but when penis-kun and sperm-sama meet and theyre blushing and all like "uwaaa~!" (?´?)?: ?hehehe~penis-kun is so adorable (?´???)?::?`,
+//`Dicks are so cute omg( •?• ) when you hold one in your hand and it starts twitching its like its nuzzling you(/) or when they perk up and look at you like" owo nya? :3c" hehe ~ penis-kun is happy to see me!!(?) and the most adorable thing ever is when sperm-sama comes out but theyre rlly shy so u have to work hard!!(?••) but when penis-kun and sperm-sama meet and theyre blushing and all like "uwaaa~!" (?´?)?: ?hehehe~penis-kun is so adorable (?´???)?::?`,
+`A Marine was taking college classes between his deployments to Afghanistan.
+
+One of his courses had a professor that was an atheist and a member of the ACLU. One day the professor shocked everyone by walking into class, looking up and stating "God, if you are real, I want you to come down and knock me off this platform, I will give you 15 minutes.
+
+Several minutes tick by in silence, when the 15 min. time almost expired the Marine gets up from his seat, approaches the professor and punched him in the face knocking him off the platform and out cold. The Marine simply went back to his seat.
+
+The professor came to, visibly shaken and asked the Marine, "What the heck did you do that for?!"
+
+The Marine said, "God was busy protecting America's military who are out protecting your right to say stupid shit like that, so he sent me to fill in."`,
+`少年，你太年轻了。你以为这个论坛上真的有那么多人回复你的帖子？其实都是我一个人回的，不然我换个ID发同样的话给你看。
+
+Son, you’re too young. Do you really think there are that many people responding to your post on this forum? It was all me. Let me change another user ID again and post the same expression here, then you’ll know.`
 ];
 module.exports = function(msg, args){
     const index = Math.floor(Math.random() * repliesPasta.length);
