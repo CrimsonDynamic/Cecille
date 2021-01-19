@@ -45,7 +45,7 @@ const repliesNSFW =[
     "What is the song that you get it on to the most?",
     "Where are you on the straight / queer spectrum? Be honest!",
     "What’s your favorite fantasy to pleasure yourself to?",
-    "Where is the weirdest place that you’ve ever gone solo?",
+    "Where is the weirdest place that you’ve ever masturbated?",
     "What is your favorite 'special' toy?",
     "When was the first time you came?",
     "Who was your best partner and why?",
@@ -67,7 +67,7 @@ const repliesNSFW =[
     "Have you ever considered a threesome?",
     "Do you have any interesting fetishes?",
     "Have you ever been to a strip club?",
-    "When did you go solo for the first time?",
+    "When did you masturbate for the first time?",
     "What was the most powerful sexual experience you’ve ever had?",
     "Give your junk a name",
     "Most embarrassing time you got turned on?",
@@ -161,6 +161,9 @@ const repliesNSFW =[
     "If I went through your room, would I find anything hidden or interesting?",
     "Do you have a name for your penis or vagina?",
     "Ever played seven minutes in heaven ? If yes what happened?",
+    "Favorite way of masturbating",
+    "How do you masturbate?",
+    "Ever tasted your own semen?",
 
 ];
 module.exports = function(msg, args){
