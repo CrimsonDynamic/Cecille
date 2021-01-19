@@ -1,5 +1,4 @@
 console.log('Beep Beep!');
-const img = require('image-scraper');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fetch = require('node-fetch');
