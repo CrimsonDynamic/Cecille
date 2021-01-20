@@ -25,11 +25,12 @@ const holymountain = require('./commands/holymountain.js');
 const pasta = require('./commands/pasta.js');
 const survey = require('./commands/survey.js');
 const slap = require('./commands/slap.js')
+const kill = require('./commands/kill.js')
 
 const commands = { 
     choochoo,gif,bye,c,bonk,ched,avatar,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, servers, ship,
-    spam, support, version,holymountain, pasta, survey,slap,
+    spam, support, version,holymountain, pasta, survey,slap,kill,
 };
 
 module.exports = async function(msg) {
