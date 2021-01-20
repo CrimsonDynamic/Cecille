@@ -1,8 +1,31 @@
-const replyHelp =[
-    "Hello this is Cecille the Truth or Truth Bot by Crimson.\n Use $truth for truths; \n $nsfwtruth for nsfw truths (disabled on non nsfw); \n $help for help and $version for the current bots version; \n $c so if someone is slow; \n $support is for the Discord Server link of the bot for tech support etc.\n $kiss is to kiss someone 💋 \n with $gif you can search for a gif \n with $github you can see the bots github \n with $server you can see server stats \n with $version you see the current version",
-    "This is Version 0.2.2 Cheesecake",
-]
-module.exports = function(msg, args){
-msg.reply(replyHelp[0]);
-msg.channel.send('Use $survey for a quick form you can fill out regarding the bot.\n I would love your participation!')
-}
+
+const Discord = require('discord.js');
+module.exports = function(msg, args,client,user){
+      const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#b19cd9')
+        .attachFiles(['./assets/Cecille.jpg'])
+        .setTitle('Help')
+        //.setURL('https://discord.js.org/')
+        .setAuthor('Cecille', 'https://i.imgur.com/a/F0sxS5m',)
+        .setDescription('This is the help page')
+        .setThumbnail('attachment://Cecille.jpg')
+        .addFields(
+            { name: '$truth', value: 'This command gives you Truth or Dare Questions' },
+            { name: '$nsfwtruth', value: 'This gives NSFW Truth or Dare Questions'},
+            {name:'$slap <@Mention>', value:'This slaps a user'},
+            {name:'$kiss <@Mention>', value:'This kisses a user'},
+            {name:'$version', value:'This gives the current version of the bot'},
+            {name:'$server', value:'This command gives stats about this server'},
+            {name:'$support', value:'This command gives an invite link to the Discord Server of Cecille'},
+            {name:'$pasta', value:'This command gives a random copypasta'},
+            {name:'$gif <keywords>', value:'This command searches for gifs on tenor based on keywords'},
+            {name:'$bonk <@Mention>', value:'With this command you can bonk someone for being horny'},
+            {name:'$github', value:'This leads to Cecilles Github page'},
+            {name:'$ship', value:'This displays the best ship on all servers'},
+            {name:'$survey', value:'This command gives you a link to a survey about the bot :)'},
+            {name:'$holymountain', value:'This command gives you the holy mountain leopard nipple gif'},
+        )
+        .setTimestamp()
+        .setFooter('I love yall, Cecille <3','attachment://Cecille.jpg');
+    msg.channel.send(exampleEmbed);
+ }
