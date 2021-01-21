@@ -307,6 +307,7 @@ const repliesNSFW =[
     `Do you ever catch yourself thinking about doing it with someone of the same sex?`,
     `How old were you when your parents sat you down for “the talk” and what did they say (or not say) about “the birds and the bees”?`,
     `What’s the most number of times you’ve ever masturbated within one week?`,
+    `Did you masturbate today ? If yes how long was it ago ?`,
 ];
 module.exports = function(msg, args){
     const index = Math.floor(Math.random() * repliesNSFW.length);
