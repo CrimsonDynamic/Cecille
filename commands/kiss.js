@@ -3,5 +3,5 @@ module.exports = function(msg, args){
         return msg.reply(`You need to tag a user to kiss him/her`);
     }
     const taggedUser = msg.mentions.users.first();
-    msg.reply(`kissed ${taggedUser.username} \:kiss:`);
+    msg.reply(`kissed ${taggedUser} \:kiss:`);
 };
