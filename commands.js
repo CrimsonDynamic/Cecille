@@ -47,9 +47,4 @@ module.exports = async function(msg) {
         command = command.substring(1);
         commands[command](msg, tokens);
       }
-      if (msg.content ==='$servers'){
-        client.guilds.cache.forEach(guild => {
-          console.log(`${guild.name} | ${guild.id}`);
-        })
-      }
 }
