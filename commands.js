@@ -31,13 +31,14 @@ const slap = require('./commands/slap.js');
 const kill = require('./commands/kill.js');
 const a = require('./commands/aaaaa.js')
 const reboot = require('./commands/reboot.js')
-const hug = require('./commands/hug.js')
+const hug = require('./commands/hug.js');
+const request = require('./commands/request.js')
 
-const commands = { 
+const commands = {
     choochoo,gif,bye,c,bonk,ched,avatar,nsfwtruth,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, ship,
     spam, support, version,kitten,embedTest,holymountain, pasta,
-    survey,slap,kill,a,reboot,hug,
+    survey,slap,kill,a,reboot,hug,request,
 };
 module.exports = async function(msg) {
     console.log(msg.content);

@@ -28,12 +28,16 @@ const slap = require('./commands/slap.js')
 const kill = require('./commands/kill.js');
 const a = require('./commands/aaaaa.js')
 const hug = require('./commands/hug.js')
+const request = require('./commands/request.js')
 
-const commands = { 
+
+
+
+const commands = {
     choochoo,gif,bye,c,bonk,ched,avatar,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, servers, ship,
     spam, support, version,holymountain, pasta, survey,slap,kill,
-    a,hug,
+    a,hug, request,
 };
 
 module.exports = async function(msg) {
