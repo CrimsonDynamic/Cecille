@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports = function(msg, args,client,user){
       const exampleEmbed = new Discord.MessageEmbed()
         .setColor('#b19cd9')
-        .attachFiles(['./assets/Cecille.jpg'])
+      //  .attachFiles(['./assets/Cecille.jpg'])
         .setTitle('Help')
         //.setURL('https://discord.js.org/')
         .setAuthor('Cecille', 'https://i.imgur.com/a/F0sxS5m',)
@@ -26,6 +26,6 @@ module.exports = function(msg, args,client,user){
             {name:'$holymountain', value:'This command gives you the holy mountain leopard nipple gif'},
         )
         .setTimestamp()
-        .setFooter('I love yall, Cecille <3','attachment://Cecille.jpg');
+        .setFooter('I love yall, Cecille <3');
     msg.channel.send(exampleEmbed);
  }
