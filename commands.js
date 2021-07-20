@@ -33,12 +33,14 @@ const a = require('./commands/aaaaa.js')
 const reboot = require('./commands/reboot.js')
 const hug = require('./commands/hug.js');
 const request = require('./commands/request.js')
+const reddit = require('./commands/reddit.js');
+const pins = require('./commands/pins.js')
 
 const commands = {
     choochoo,gif,bye,c,bonk,ched,avatar,nsfwtruth,truth, church,
     daddy, fuckme, github, help, init, kiss, oi, server, ship,
     spam, support, version,kitten,embedTest,holymountain, pasta,
-    survey,slap,kill,a,reboot,hug,request,
+    survey,slap,kill,a,reboot,hug,request,reddit,pins,
 };
 module.exports = async function(msg) {
     console.log(msg.content);
