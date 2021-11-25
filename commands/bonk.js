@@ -1,7 +1,16 @@
-module.exports = function(msg, args){
-if(!msg.mentions.users.size){
-    return msg.reply(`You need to tag a user to bonk him/her`);
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { User } = require('discord.js');
+
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('bonk')
+        .setDescription('Bonk a User')
+        .addUserOption( option => 
+            option.setName('User')
+            .setDescription('Tag a User')
+            .setRequired(true)
+            ),
+    async execute(interaction) {
+        await interaction.reply(`BONK YOU FILTHY ANIMAL ${m}`);
+    }
 }
-const taggedUser = msg.mentions.users.first();
-msg.channel.send(`BONK GO TO HORNY JAIL YOU FILTHY ANIMAL ${taggedUser}`);
-};

@@ -5,5 +5,4 @@ const replyHelp =[
 module.exports = function(msg, args){
 msg.reply(replyHelp[1]);
 msg.channel.send(`In this version I added 150 more questions for $nswftruth`);
-//msg.channel.send(`I dont like you <@698123874105163807>`)
 };
